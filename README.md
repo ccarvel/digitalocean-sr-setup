@@ -121,9 +121,15 @@ Enter the password for newuser and you will see the /root directory listing.
 Exit the newuser shell by entering ```exit``` or ```ctrl+d``` 
  
 ### BACK TO ROOT SHELL, ENABLE AND CHECK FIREWALL STATUS
-```ufw allow OpenSSH```
-```ufw enable```
-```ufw status```
+```console
+ufw allow OpenSSH
+```   
+```console
+ufw enable
+```   
+```console
+ufw status
+```   
 
 ### LOGOUT, RECONNECT AS NEWUSER
 Let's reconnect to the droplet as ```newuser```
@@ -163,7 +169,7 @@ gpg --default-new-key-algo rsa4096 --gen-key
 We need to note, and copy some of this information, enter:
 ```console
 gpg --list-secret-keys --keyid-format=long
-```
+```   
 ```console
 home/newuser/.gnupg/pubring.kbx
 ------------------------------
@@ -171,11 +177,15 @@ sec   rsa4096/JJMVNZ8ERAZZILBW 2024-01-11 [SC] [expires: 2026-01-10]
       H2ZJYTQLNDOX7ZDYRBEMUOGIY06E4CE2C5GCS8RS
 uid                 [ultimate] NEW USER <new_user@brown.edu>
 ssb   rsa4096/KUHXODP27VUUHIWN 2024-01-11 [E] [expires: 2026-01-10]
-```
+```   
 We care about the 16 character string after
- ```sec   rsa4096/```
+```console
+sec   rsa4096/
+```   
 that is:
- ```JJMVNZ8ERAZZILBW``` 
+```console
+JJMVNZ8ERAZZILBW
+```    
 Copy that string. 
 ### PASS (THE STANDARD UNIX PASSWORD MANAGER)
 ```console
@@ -189,7 +199,7 @@ pass init JJMVNZ8ERAZZILBW
 ### CREATE SSH KEY FOR GITHUB 
 ```console
 ssh-keygen -t ed25519 -C "new_user@brown.edu"
-```
+```   
 ```console
 Generating public/private ed25519 key pair.
 Enter file in which to save the key (/home/srdkr/.ssh/id_ed25519): id_ghsshkey
@@ -211,36 +221,35 @@ The key's randomart image is:
 |         . E..+=o|
 |          +...+B=|
 +----[SHA256]-----+
-```
+```   
 ***(Tell the system to use this new ssh key)***
 ```console
 eval "$(ssh-agent -s)"
-```
+```   
 ```console
 ssh-add ~/.ssh/id_ed25519
-```
+```   
 ***(And ensure it is used everytime the user logs in by adding it to the .bashrc file)***
 ```
 nano ~/.bashrc
-```
+```   
 *Add the following to the end of your .bashrc file*
 
 ```console
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
-```
-
+```   
 ***(Copy the public key via cat command)***
 ```console
 cat ~/.ssh/id_ghsshkey.pub
-```
+```   
 *copy output*
 ```
 ssh-ed25519 dIH2Xzy9lA4C1wNvBSG3CmEtiKOTZDGIS77vLNYMsLoUGTL0lL33tO6CJmBDGIPPdIlll new_user@brown.edu
-```
+```   
 
 ***(Add public key to github)***
-[Add a new key](https://github.com/settings/ssh/new)
+[Add a new key](https://github.com/settings/ssh/new)   
 ***(Give the key a title, type=authentication key, paste your copied public key in the key box)***
 
 ### GIT CLONE SR\_DKR\_STARTUP REPO; BUILDING IMAGES; STARTING CONTAINERS
