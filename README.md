@@ -21,6 +21,7 @@ nano
 ```console sudo apt install ufw```   
 ```console sudo apt install gnupg```   
 ```console sudo apt install nano```   
+
 ***other commands to be installed will be in the instructions as needed***  
 
 ### Create an SSH KEY on your local computer first
