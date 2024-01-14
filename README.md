@@ -132,7 +132,7 @@ ufw status
 ```   
 
 ### LOGOUT, RECONNECT AS NEWUSER
-Let's reconnect to the droplet as ```newuser```
+Let's reconnect to the droplet as ```newuser```   
 ```ctrl+d``` OR ```exit```
 
 ### SSH AS NEW USER
