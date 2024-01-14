@@ -258,5 +258,5 @@ XXXX-XXXX
 cd sr_dkr_startup
 ```
 ### CONTINUE USING THE README.md FOR THE SR_DKR_STARTUP REPO
-[CONTINUE](https://github.com/Brown-University-Library/sr_dkr_startup){:target="_blank"}
+[CONTINUE](https://github.com/Brown-University-Library/sr_dkr_startup){:target="_blank" rel="noopener"}
 
