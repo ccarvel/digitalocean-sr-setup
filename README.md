@@ -149,10 +149,6 @@ wget https://github.com/git-ecosystem/git-credential-manager/releases/download/v
 sudo dpkg -i gcm-linux_amd64.2.4.1.deb
 ```
 ```console
-git config --global credential.credentialStore gpg
-```
-
-```console
 git-credential-manager configure
 ```
 ```console
@@ -261,4 +257,6 @@ XXXX-XXXX
 ```
 cd sr_dkr_startup
 ```
+### CONTINUE USING THE README.md FOR THE SR_DKR_STARTUP REPO
+[CONTINUE](https://github.com/Brown-University-Library/sr_dkr_startup){:target="_blank"}
 
