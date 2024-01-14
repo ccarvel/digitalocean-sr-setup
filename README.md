@@ -255,8 +255,8 @@ ssh-ed25519 dIH2Xzy9lA4C1wNvBSG3CmEtiKOTZDGIS77vLNYMsLoUGTL0lL33tO6CJmBDGIPPdIll
 ### GIT CLONE SR\_DKR\_STARTUP REPO; BUILDING IMAGES; STARTING CONTAINERS
 
 ```console
-git clone https://github.com/Brown-University-Library/sr_dkr_startup.git```
-```
+git clone https://github.com/Brown-University-Library/sr_dkr_startup.git
+```   
 ```console
 Cloning into 'sr_dkr_startup'...
 Select an authentication method for 'https://github.com/':
