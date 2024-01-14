@@ -179,7 +179,8 @@ that is:
 Copy that string. 
 ### PASS (THE STANDARD UNIX PASSWORD MANAGER)
 ```console
-sudo apt install pass -y```<br>
+sudo apt install pass -y
+```   
 
 ```console
 pass init JJMVNZ8ERAZZILBW
@@ -188,6 +189,8 @@ pass init JJMVNZ8ERAZZILBW
 ### CREATE SSH KEY FOR GITHUB 
 ```console
 ssh-keygen -t ed25519 -C "new_user@brown.edu"
+```
+```console
 Generating public/private ed25519 key pair.
 Enter file in which to save the key (/home/srdkr/.ssh/id_ed25519): id_ghsshkey
 Enter passphrase (empty for no passphrase):
