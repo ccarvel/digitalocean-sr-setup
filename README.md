@@ -7,19 +7,20 @@
 [GET DOCKER](https://docs.docker.com/get-docker/)
 
 ***Commands you will need to use (and should have on your OS by default)***   
+```console
 openssh   
 rsync   
 ufw   
 git   
 gnupg (gpg)   
 nano    
-   
+```   
 ***…but if you get a ```command not found``` and are running Ubuntu or Debian, you can install them***   
-sudo apt install openssl-client   
-sudo apt install rsync   
-sudo apt install ufw   
-sudo apt install gnupg   
-sudo apt install nano   
+```console sudo apt install openssl-client```   
+```console sudo apt install rsync```   
+```console sudo apt install ufw```   
+```console sudo apt install gnupg```   
+```console sudo apt install nano```   
 
 ### Create an SSH KEY on your local computer first
 ***To Connect without a password, create an SSH KEY on your local computer first***
